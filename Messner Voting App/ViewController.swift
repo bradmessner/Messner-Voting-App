@@ -10,10 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+    @IBAction func voteUp(_ sender: Any) {
+        (parent as! TBViewController).yesVote+=1
     }
+    
+    @IBAction func voteDown(_ sender: Any) {
+        (parent as! TBViewController).noVote+=1
+    }
+
+    
+
 
 
 }
